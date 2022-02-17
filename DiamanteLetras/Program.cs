@@ -6,7 +6,7 @@ namespace DiamanteLetras
     {
         static void Main(string[] args)
         {
-          
+          //INICIO
             string letra;
             int linhas;
             string letras = "abcdefghijklmnopqrstuvwxyz";
