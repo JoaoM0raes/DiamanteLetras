@@ -14,7 +14,7 @@ namespace DiamanteLetras
             letra = Console.ReadLine();
             linhas = letras.IndexOf(letra);
             int espaçosLinhas = linhas;
-            int somaEspaços = 0;
+            int somaEspaços = 1;
 
             for (int i = 0; i < linhas; i++)
             {
@@ -22,6 +22,7 @@ namespace DiamanteLetras
                 {
                     Console.Write(" ");
                 }
+                
                 Console.Write(letras[i]);
                 for (int l = 0; l < somaEspaços; l++)
                 {
@@ -30,8 +31,8 @@ namespace DiamanteLetras
                 if (i >= 1)
                 {
                     Console.Write(letras[i]);
-                }
-                somaEspaços += 2;
+                        somaEspaços += 2; ;
+                }                                        
                 espaçosLinhas--;
                 Console.WriteLine();
             }
